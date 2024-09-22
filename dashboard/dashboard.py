@@ -59,7 +59,7 @@ def create_user_df(df):
     user_df = user_df.sort_values(by="rentals_count", ascending=False)
     return user_df
 
-bike_df = pd.read_csv("bike_data.csv")
+bike_df = pd.read_csv("./dashboard/bike_data.csv")
 
 datetime_columns = ["dteday"]
 bike_df.sort_values(by="dteday", inplace=True)
