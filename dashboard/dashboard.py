@@ -76,7 +76,7 @@ max_date = bike_df["dteday"].max()
 
 with st.sidebar:
     st.markdown("<h2 style='text-align: center;'>Bike Sharing</h2>", unsafe_allow_html=True)
-    st.image("bike-logo.png")
+    st.image("./dashboard/bike-logo.png")
     start_date, end_date = st.date_input(
         label='Rentang Waktu',min_value=min_date,
         max_value=max_date,
